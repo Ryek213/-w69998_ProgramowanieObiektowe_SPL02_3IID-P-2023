@@ -4,20 +4,37 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            int i = 7;
-            Console.WriteLine(i);
-
-            if(i % 2 == 0)
+            while (true)
             {
-                Console.WriteLine("Liczba jest parzysta");
-            }
-            else
-            {
-                Console.WriteLine("Liczba jest nieparzysta");
-            }
+                Console.WriteLine("Wybierz zadanie:");
+                Console.WriteLine("1. Parzystość");
+                Console.WriteLine("2. Liczby parzyste");
+                Console.WriteLine("0. Wyjście");
+                int zad = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("test");
+                switch (zad)
+                {
+                    case 0:
+                    case 1:
+                        Console.WriteLine("Podaj liczbę");
+                        if (int.TryParse(Console.ReadLine(), out int n))
+                        {
+                            if (n % 2 == 0)
+                            {
+                                Console.WriteLine("Liczba jest parzysta");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Liczba jest nieparzysta");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Nie podano liczby");
+                        }
+                        break;
+                }
+            }
         }
     }
 }
