@@ -16,6 +16,8 @@
             {
                 Console.WriteLine("Liczba jest nieparzysta");
             }
+
+            Console.WriteLine("test");
         }
     }
 }
