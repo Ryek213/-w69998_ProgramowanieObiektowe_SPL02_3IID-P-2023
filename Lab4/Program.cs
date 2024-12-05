@@ -6,11 +6,7 @@ namespace Lab4
     {
         static void Main(string[] args)
         {
-            List<Shape> shapes = new List<Shape>();
-
-            shapes.Add(new Rectangle(1));
-            shapes.Add(new Triangle(1));
-            shapes.Add(new Circle(1));
+            List<Shape> shapes = [new Rectangle(1), new Triangle(1), new Circle(1)];
 
             foreach (var e in shapes)
             {
@@ -27,8 +23,12 @@ namespace Lab4
             osoba.Nazwisko = "B";
             Console.WriteLine(osoba.Nazwisko);
 
-            osoba.Pesel = "12341234123";
+            osoba.Pesel = "12321234123";
             Console.WriteLine(osoba.Pesel);
+
+            Console.WriteLine(osoba.PobierzWiek());
+
+            Console.WriteLine(osoba.PobierzPlec());
         }
     }
 }
