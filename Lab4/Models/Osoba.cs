@@ -90,7 +90,10 @@ namespace Lab4.Models
             }
         }
         public virtual void PobierzInformacjeOEdukacji() { }
-        public virtual void PobierzPelneImieNazwisko() { }
-        public virtual void CzyMozeSamWrocicDoDomu() { }
+        public virtual string PobierzPelneImieNazwisko()
+        {
+            return Imie + " " + Nazwisko;
+        }
+        public virtual bool CzyMozeSamWrocicDoDomu() { return false; }
     }
 }
