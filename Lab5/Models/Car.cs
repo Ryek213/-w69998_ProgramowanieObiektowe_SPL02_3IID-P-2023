@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lab5.Interfaces;
 
-namespace Lab5
+namespace Lab5.Models
 {
     internal class Car : IVehicle
     {
         public int MaxSpeed { get; set; }
-        public double FuelLevel {  get; set; }
+        public double FuelLevel { get; set; }
 
         public Car(int maxSpeed)
         {
@@ -28,7 +29,7 @@ namespace Lab5
 
         public double GetFuelLevel()
         {
-            return this.FuelLevel;
+            return FuelLevel;
         }
     }
 }

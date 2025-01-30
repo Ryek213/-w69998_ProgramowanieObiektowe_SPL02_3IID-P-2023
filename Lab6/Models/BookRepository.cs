@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab5
+namespace Lab6.Models
 {
-    internal abstract class Shape
+    internal class BookRepository
     {
-        public abstract double CalculateArea();
     }
 }

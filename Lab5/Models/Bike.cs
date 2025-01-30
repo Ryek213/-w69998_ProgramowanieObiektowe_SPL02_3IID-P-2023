@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lab5.Interfaces;
 
-namespace Lab5
+namespace Lab5.Models
 {
     internal class Bike : IVehicle
     {
@@ -14,13 +15,13 @@ namespace Lab5
         {
             get
             {
-                return this.numberOfSeats;
+                return numberOfSeats;
             }
             set
             {
                 if (value > 0)
                 {
-                    this.numberOfSeats = value;
+                    numberOfSeats = value;
                 }
             }
         }

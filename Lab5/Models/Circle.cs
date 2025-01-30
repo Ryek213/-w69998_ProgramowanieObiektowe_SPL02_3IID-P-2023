@@ -4,16 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab5
+namespace Lab5.Models
 {
-    internal class Triangle : Shape
+    internal class Circle : Shape
     {
-        public double a;
-        public double h;
-
+        public double r;
         public override double CalculateArea()
         {
-            return a * h / 2;
+            return Math.Pow(r, 2) * Math.PI;
         }
     }
 }

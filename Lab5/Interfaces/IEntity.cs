@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab5
+namespace Lab5.Interfaces
 {
-    internal interface IDateOfCreation
+    internal interface IEntity<T>
     {
-        DateTime DateOfCreation { get; set; }
+        T Id { get; set; }
     }
 }

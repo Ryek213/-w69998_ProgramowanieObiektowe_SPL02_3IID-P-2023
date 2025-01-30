@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab5
+namespace Lab5.Models
 {
-    internal interface IEntity <T>
+    internal abstract class Shape
     {
-        T Id { get; set; }
+        public abstract double CalculateArea();
     }
 }

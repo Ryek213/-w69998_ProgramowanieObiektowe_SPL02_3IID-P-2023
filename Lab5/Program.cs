@@ -1,4 +1,6 @@
-﻿namespace Lab5
+﻿using Lab5.Models;
+
+namespace Lab5
 {
     internal class Program
     {
